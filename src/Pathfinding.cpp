@@ -88,7 +88,7 @@ bool Pathfinder::contains(std::vector<Node*> nodes, const Node& node) const {
 
 std::vector<Node*> Pathfinder::getNeighbours(std::vector<Node>& nodes, Node* current_node) {
 	std::vector<Node*> neighbours;
-	// ta fukcja bieerze sobei b rac
+	
 	for (int y = -1; y <= 1; y++) {
 		for (int x = -1; x <= 1; x++) {
 			const int X = current_node->x + x;
