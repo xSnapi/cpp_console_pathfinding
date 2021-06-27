@@ -2,7 +2,6 @@
 
 struct Node 
 {
-public:
 	Node(unsigned _x = 0, unsigned _y = 0) 
 		: x(_x), y(_y) {}
 
