@@ -2,4 +2,4 @@
 Very simple A* pathfinding using c++
 Written in a hurry
 
-![sus]()
+![sus](https://raw.githubusercontent.com/xSnapi/cpp_console_pathfinding/main/Images/pathfinding.png)
