@@ -57,7 +57,11 @@ void initNodes(vector<Node>& nodes, T arr) {
 }
 
 int main() {
+#ifdef _WIN32
 	system("title A* pathfinding");
+#else
+	printf("\033]0;A* pathfinding\a");
+#endif
 
 	Pathfinder pathfinder;
 	vector<Node> nodes;
@@ -91,7 +95,11 @@ int main() {
 	};
 
 	initNodes(nodes, grid);
+#ifdef _WIN32
 	system("pause");
+#else
+	system("read -p 'Press Enter to continue...'");
+#endif
 
 	// size of board 25 x 25 ( 0 - 24, 0 - 24)
 
@@ -104,7 +112,11 @@ int main() {
 
 	printNodes(nodes, start_node, end_node);
 
+#ifdef _WIN32
 	system("pause");
+#else
+	system("read -p 'Press Enter to continue...'");
+#endif
 	return 0;
 }
 
